@@ -3,50 +3,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <title>Your Webstore</title>
+  <style>
+    /* Reset some default styling */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: navy;
+      color: white;
+    }
+
+    .icon {
+  width: 60px; /* Adjust the size as needed */
+  height: auto;
+  margin: 10px; /* Adjust the margin as needed */
+}
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: navy;
+    }
+
+    .full-width-banner {
+      display: flex;
+      overflow: hidden;
+    }
+
+    .picture {
+      flex: 0 0 100%;
+    }
+
+    .picture img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .hero {
+      background-image: url('hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 8rem 0;
+      color: white;
+    }
+
+    .hero-content {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      backdrop-filter: blur(5px);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: navy;
+      color: white;
+      padding: 0.8rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: navy;
+    }
+
+    .featured-products {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .product {
+    display: inline-block;
+  width: 45%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  text-align: center; /* Center content within each product */
+  }
+  
+  .product img {
+    max-width: 100%;
+  height: 200px; /* Maintain aspect ratio */
+  width: 200px; /* Set a fixed width for the images */
+  margin-bottom: 1rem; /* Add some spacing below the image */
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: navy;
+    color: white;
+  }
+
+  </style>
 </head>
 <body>
   <header>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="https://static.vecteezy.com/system/resources/previews/005/948/268/original/document-outline-icon-file-line-symbol-paper-icon-free-vector.jpg" alt="Icon" class="icon">
   </header>
   
   <main>
+    
+    <!-- Existing hero section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Welcome to PAPER</h1>
+        <h1>Welcome to Paper Store</h1>
         <p>Discover amazing products that suit your needs.</p>
         <a href="#" class="btn">Shop Now</a>
       </div>
     </section>
-
     
     <section class="featured-products">
-      <h2>Featured Products</h2>
-      <div class="product">
-        <img src="https://df3k2q0k3bu2n.cloudfront.net/static/images/PPCPCO70GA4-2_sq.jpg" alt="Product 1">
-        <h3>A4 Paper</h3>
-        <p>For your A4 paper needs...</p>
-        <a href="#" class="btn">View Details</a>
-      </div>
-      <div class="product">
-        <img src="https://m.media-amazon.com/images/I/618HAuH4xdL.jpg" alt="Product 2">
-        <h3>A5 Paper</h3>
-        <p>For your A5 paper needs...</p>
-        <a href="#" class="btn">View Details</a>
-      </div>
-    </section>
+        <h2>Featured Products</h2>
+        <div class="product">
+          <img src="https://df3k2q0k3bu2n.cloudfront.net/static/images/PPCPCO70GA4-2_sq.jpg" alt="Product 1">
+          <h3>A4 Paper</h3>
+          <p>For your A4 paper needs...</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/618HAuH4xdL.jpg" alt="Product 2">
+          <h3>A5 Paper</h3>
+          <p>For your A5 paper needs...</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </section>
   </main>
   
   <footer>
-    <p>&copy; 2023 Your Webstore. All rights reserved.</p>
+    <p>&copy; 2023 Paper Store. All rights reserved.</p>
   </footer>
 </body>
 </html>
