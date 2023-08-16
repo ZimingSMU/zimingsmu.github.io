@@ -27,6 +27,7 @@ body, h1, h2, h3, p, ul, li {
     margin: 0 1rem;
   }
   
+
   .hero {
     background-image: url('hero-image.jpg');
   background-size: cover;
@@ -52,8 +53,8 @@ body, h1, h2, h3, p, ul, li {
     display: inline-block;
     background-color: navy;
     color: white;
-    padding: 0.8rem 2rem; /* Adjust button padding for better proportions */
-    font-size: 1.2rem; /* Increase button text size */
+ padding: 0.8rem 2rem; /* Adjust button padding for better proportions */
+  font-size: 1.2rem; /* Increase button text size */
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -82,8 +83,8 @@ body, h1, h2, h3, p, ul, li {
   
   .product img {
     max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  width: 80%; /* Set a fixed width for the images */
+  height: 200px; /* Maintain aspect ratio */
+  width: 200px; /* Set a fixed width for the images */
   margin-bottom: 1rem; /* Add some spacing below the image */
   }
   
